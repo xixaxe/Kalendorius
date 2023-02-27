@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nedarbo dienų kalendorius</title>
+    <style>
+        h1 {
+            color:#315496 ;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bolder;
+        }
+        table {
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+        table td {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 2px 10px;
+            border-top: 1.5px solid #c2cee1;
+            border-left: 1.5px solid#c2cee1 ;
+        }
+        tr.month td {
+            color: white;
+            background-color:#315496;
+        }
+        tr.week {
+            border-left: none;
+            background-color:#8eaadc;
+            color: white;
+        }
+        tr.week td {
+            border: none;
+        }
+        td.empty {
+            background-color: #dae1f3;
+            color: #dae1f3 ;
+        }
+        td.day {
+            font-weight: bold;
+        }
+        table td.non-work-day {
+            background-color: #f8cbac;
+            color: red;
+            font-weight: bold;
+        }
+        tr td:last-child {
+            border-right: 1.5px solid #c2cee1;
+        }
+        table tr:last-child td {
+            border-bottom: 1.5px solid #c2cee1;
+        }
+        tr.week td:first-child {
+            border-left: 1.5px solid #c2cee1
+        }
+        .column {
+            float: left;
+            width: 33.333333333%;
+        }
+
+            
+
+
+    </style>
+</head>
+<body>
+    <h1>2022 metų kalendorius</h1>
+    <div class="column">
+        <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">sausis</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="non-work-day">1</td>
+                    <td class="day">2</td>
+                </tr>
+                <tr>
+                    <td class="day">3</td>
+                    <td class="day">4</td>
+                    <td class="day">5</td>
+                    <td class="day">6</td>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                </tr>
+                <tr>
+                    <td class="day">10</td>
+                    <td class="day">11</td>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                    <td class="day">16</td>
+                </tr>
+                <tr>
+                    <td class="day">17</td>
+                    <td class="day">18</td>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                </tr>
+                <tr>
+                    <td class="day">24</td>
+                    <td class="day">25</td>
+                    <td class="day">26</td>
+                    <td class="day">27</td>
+                    <td class="day">28</td>
+                    <td class="day">29</td>
+                    <td class="day">30</td>
+                </tr>
+                <tr>
+                    <td class="day">31</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">balandis</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="day">1</td>
+                    <td class="day">2</td>
+                    <td class="day">3</td>
+                </tr>
+                <tr>
+                    <td class="day">4</td>
+                    <td class="day">5</td>
+                    <td class="day">6</td>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                    <td class="day">10</td
+                </tr>
+                <tr>
+                    <td class="day">11</td>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                    <td class="day">16</td>
+                    <td class="non-work-day">17</td
+                </tr>
+                <tr>
+                    <td class="non-work-day">18</td>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                    <td class="day">24</td
+                </tr>
+                <tr>
+                    <td class="day">25</td>
+                    <td class="day">26</td>
+                    <td class="day">27</td>
+                    <td class="day">28</td>
+                    <td class="day">29</td>
+                    <td class="day">30</td>
+                    <td class="empty"></td
+                </tr>
+                <tr>
+                    <td class="empty">1</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+             </tbody>
+         </table>
+         <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">liepa</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="day">1</td>
+                    <td class="day">2</td>
+                    <td class="day">3</td>
+                </tr>
+                <tr>
+                    <td class="day">4</td>
+                    <td class="day">5</td>
+                    <td class="non-work-day">6</td>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                    <td class="day">10</td
+                </tr>
+                <tr>
+                    <td class="day">11</td>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                    <td class="day">16</td>
+                    <td class="day">17</td
+                </tr>
+                <tr>
+                    <td class="day">18</td>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                    <td class="day">24</td
+                </tr>
+                <tr>
+                    <td class="day">25</td>
+                    <td class="day">26</td>
+                    <td class="day">27</td>
+                    <td class="day">28</td>
+                    <td class="day">29</td>
+                    <td class="day">30</td>
+                    <td class="day">31</td
+                </tr>
+                <tr>
+                    <td class="empty">1</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+
+            </tbody>
+         </table>
+         <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">spalis</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="day">1</td>
+                    <td class="day">2</td>
+                </tr>
+                <tr>
+                    <td class="day">3</td>
+                    <td class="day">4</td>
+                    <td class="day">5</td>
+                    <td class="day">6</td>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                </tr>
+                <tr>
+                    <td class="day">10</td>
+                    <td class="day">11</td>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                    <td class="day">16</td>
+                </tr>
+                <tr>
+                    <td class="day">17</td>
+                    <td class="day">18</td>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                </tr>
+                <tr>
+                    <td class="day">24</td>
+                    <td class="day">25</td>
+                    <td class="day">26</td>
+                    <td class="day">27</td>
+                    <td class="day">28</td>
+                    <td class="day">29</td>
+                    <td class="day">30</td>
+                </tr>
+                <tr>
+                    <td class="day">31</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+         </table>       
+
+    </div>
+    <div class="column">
+        <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">vasaris</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="day">1</td>
+                    <td class="day">2</td>
+                    <td class="day">3</td>
+                    <td class="day">4</td>
+                    <td class="day">5</td>
+                    <td class="day">6</td>
+                </tr>
+                <tr>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                    <td class="day">10</td>
+                    <td class="day">11</td>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                </tr>
+                <tr>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                    <td class="non-work-day">16</td>
+                    <td class="day">17</td>
+                    <td class="day">18</td>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                </tr>
+                <tr>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                    <td class="day">24</td>
+                    <td class="day">25</td>
+                    <td class="day">26</td>
+                    <td class="day">27</td>
+                </tr>
+                <tr>
+                    <td class="day">28</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty">1</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">gegužė</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="non-work-day">1</td>
+                </tr>
+                <tr>
+                    <td class="day">2</td>
+                    <td class="day">3</td>
+                    <td class="day">4</td>
+                    <td class="day">5</td>
+                    <td class="day">6</td>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                </tr>
+                <tr>
+                    <td class="day">9</td>
+                    <td class="day">10</td>
+                    <td class="day">11</td>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                </tr>
+                <tr>
+                    <td class="day">16</td>
+                    <td class="day">17</td>
+                    <td class="day">18</td>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                </tr>
+                <tr>
+                    <td class="day">23</td>
+                    <td class="day">24</td>
+                    <td class="day">25</td>
+                    <td class="day">26</td>
+                    <td class="day">27</td>
+                    <td class="day">28</td>
+                    <td class="day">29</td>
+                </tr>
+                <tr>
+                    <td class="day">30</td>
+                    <td class="day">31</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">rugpjūtis</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="day">1</td>
+                    <td class="day">2</td>
+                    <td class="day">3</td>
+                    <td class="day">4</td>
+                    <td class="day">5</td>
+                    <td class="day">6</td>
+                    <td class="day">7</td>
+                </tr>
+                <tr>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                    <td class="day">10</td>
+                    <td class="day">11</td>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                    <td class="day">14</td>
+                </tr>
+                <tr>
+                    <td class="non-work-day">15</td>
+                    <td class="day">16</td>
+                    <td class="day">17</td>
+                    <td class="day">18</td>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                    <td class="day">21</td>
+                </tr>
+                <tr>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                    <td class="day">24</td>
+                    <td class="day">25</td>
+                    <td class="day">26</td>
+                    <td class="day">27</td>
+                    <td class="day">28</td>
+                </tr>
+                <tr>
+                    <td class="day">29</td>
+                    <td class="day">30</td>
+                    <td class="day">31</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty">1</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">lapkritis</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="non-work-day">1</td>
+                    <td class="non-work-day">2</td>
+                    <td class="day">3</td>
+                    <td class="day">4</td>
+                    <td class="day">5</td>
+                    <td class="day">6</td>
+                </tr>
+                <tr>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                    <td class="day">10</td>
+                    <td class="day">11</td>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                </tr>
+                <tr>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                    <td class="day">16</td>
+                    <td class="day">17</td>
+                    <td class="day">18</td>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                </tr>
+                <tr>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                    <td class="day">24</td>
+                    <td class="day">25</td>
+                    <td class="day">26</td>
+                    <td class="day">27</td>
+                </tr>
+                <tr>
+                    <td class="day">28</td>
+                    <td class="day">29</td>
+                    <td class="day">30</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty">1</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="column">
+        <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">kovas</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="day">1</td>
+                    <td class="day">2</td>
+                    <td class="day">3</td>
+                    <td class="day">4</td>
+                    <td class="day">5</td>
+                    <td class="day">6</td>
+                </tr>
+                <tr>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                    <td class="day">10</td>
+                    <td class="non-work-day">11</td>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                </tr>
+                <tr>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                    <td class="day">16</td>
+                    <td class="day">17</td>
+                    <td class="day">18</td>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                </tr>
+                <tr>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                    <td class="day">24</td>
+                    <td class="day">25</td>
+                    <td class="day">26</td>
+                    <td class="day">27</td>
+                </tr>
+                <tr>
+                    <td class="day">28</td>
+                    <td class="day">29</td>
+                    <td class="day">30</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty">1</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">birželis</td>
+                </tr>
+                <tr class="day_of_week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="day">1</td>
+                    <td class="day">2</td>
+                    <td class="day">3</td>
+                    <td class="day">4</td>
+                    <td class="day">5</td>
+                </tr>
+                <tr>
+                    <td class="day">6</td>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                    <td class="day">10</td>
+                    <td class="day">11</td>
+                    <td class="day">12</td>
+                </tr>
+                <tr>
+                    <td class="day">13</td>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                    <td class="day">16</td>
+                    <td class="day">17</td>
+                    <td class="day">18</td>
+                    <td class="day">19</td>
+                </tr>
+                <tr>
+                    <td class="day">20</td>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                    <td class="non-work-day">24</td>
+                    <td class="day">25</td>
+                    <td class="day">26</td>
+                </tr>
+                <tr>
+                    <td class="day">27</td>
+                    <td class="day">28</td>
+                    <td class="day">29</td>
+                    <td class="day">30</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty">1</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">rugsėjis</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="day">1</td>
+                    <td class="day">2</td>
+                    <td class="day">3</td>
+                    <td class="day">4</td>
+                </tr>
+                <tr>
+                    <td class="day">5</td>
+                    <td class="day">6</td>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                    <td class="day">10</td>
+                    <td class="day">11</td>
+                </tr>
+                <tr>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                    <td class="day">16</td>
+                    <td class="day">17</td>
+                    <td class="day">18</td>
+                </tr>
+                <tr>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                    <td class="day">24</td>
+                    <td class="day">25</td>
+                </tr>
+                <tr>
+                    <td class="day">26</td>
+                    <td class="day">27</td>
+                    <td class="day">28</td>
+                    <td class="day">29</td>
+                    <td class="day">30</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty">1</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr class="month">
+                    <td colspan="7">gruodis</td>
+                </tr>
+                <tr class="week">
+                    <td>P</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>K</td>
+                    <td>Pe</td>
+                    <td>Š</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="day">1</td>
+                    <td class="day">2</td>
+                    <td class="day">3</td>
+                    <td class="day">4</td>
+                </tr>
+                <tr>
+                    <td class="day">5</td>
+                    <td class="day">6</td>
+                    <td class="day">7</td>
+                    <td class="day">8</td>
+                    <td class="day">9</td>
+                    <td class="day">10</td>
+                    <td class="day">11</td>
+                </tr>
+                <tr>
+                    <td class="day">12</td>
+                    <td class="day">13</td>
+                    <td class="day">14</td>
+                    <td class="day">15</td>
+                    <td class="day">16</td>
+                    <td class="day">17</td>
+                    <td class="day">18</td>
+                </tr>
+                <tr>
+                    <td class="day">19</td>
+                    <td class="day">20</td>
+                    <td class="day">21</td>
+                    <td class="day">22</td>
+                    <td class="day">23</td>
+                    <td class="non-work-day">24</td>
+                    <td class="non-work-day">25</td>
+                </tr>
+                <tr>
+                    <td class="non-work-day">26</td>
+                    <td class="day">27</td>
+                    <td class="day">28</td>
+                    <td class="day">29</td>
+                    <td class="day">30</td>
+                    <td class="day">31</td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty">1</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+</body>
+</html>
